@@ -1,0 +1,11 @@
+{
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"[astro]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"prettier.documentSelectors": ["**/*.astro"],
+	"editor.formatOnSave": true,
+	"eslint.validate": ["javascript", "astro", "typescript"],
+	"eslint.alwaysShowStatus": true,
+	"eslint.packageManager": "pnpm"
+}
