@@ -32,7 +32,7 @@ export default defineConfig({
 				    '**/*.{js,css,svg,png,jpg,jpeg,gif,webp,woff,woff2,ttf,eot,ico}',
 				  ],
 				  // Don't fallback on document based (e.g. `/some-page`) requests
-				  // Even though this says `null` by default, I had to set this specifically to `null` to make it work
+				  // This removes an errant console.log message from showing up.
 				  navigateFallback: null,
 				},
 			})
