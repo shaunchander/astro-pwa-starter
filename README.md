@@ -1,4 +1,5 @@
-<img align="center" width="1729" alt="Screen Shot 2022-09-03 at 12 16 10 AM" src="https://user-images.githubusercontent.com/5169985/188256919-e5d29248-81ba-43d0-a966-36544e7900d3.png">
+<img align="center" width="1722" alt="Screen Shot 2022-09-03 at 10 08 15 AM" src="https://user-images.githubusercontent.com/5169985/188276696-3d33a6bb-dba7-4f5d-8168-dc9ca8ff1c26.png">
+
 
 <h1 align="center">🟢 astro-pwa-starter</h1>
 
