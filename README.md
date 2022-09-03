@@ -1,6 +1,10 @@
-# 🟢 astro-pwa-starter
 
-_An opinionated Astro starter for building robust static websites._
+<img align="center" width="1729" alt="Screen Shot 2022-09-03 at 12 16 10 AM" src="https://user-images.githubusercontent.com/5169985/188256919-e5d29248-81ba-43d0-a966-36544e7900d3.png">
+
+<h1 align="center">🟢 astro-pwa-starter</h1>
+
+<p align="center">An opinionated Astro starter for building robust static websites.</p>
+
 
 ## ✨ Feature Set
 
