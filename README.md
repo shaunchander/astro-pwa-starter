@@ -1,10 +1,8 @@
-
 <img align="center" width="1729" alt="Screen Shot 2022-09-03 at 12 16 10 AM" src="https://user-images.githubusercontent.com/5169985/188256919-e5d29248-81ba-43d0-a966-36544e7900d3.png">
 
 <h1 align="center">🟢 astro-pwa-starter</h1>
 
 <p align="center">An opinionated Astro starter for building robust static websites.</p>
-
 
 ## ✨ Feature Set
 
@@ -35,6 +33,8 @@ Here is a list of core dependencies that astro-pwa-starter relies on in case you
 
 astro-pwa-starter is an opinionated Astro starter, meaning it ships with a pre-determined file structure and procedure for doing things. In this getting started guide we'll walk you through how to use the starter for your project.
 
+---
+
 ### Understanding the project structure
 
 First, and foremost, is the project structure, in other words, how the files are laid out in the project. The starter follows a very similar convention to the one seen [in Astro's own documentation](<[https://](https://docs.astro.build/en/core-concepts/project-structure/)>). However, we've made some changes:
@@ -44,6 +44,8 @@ First, and foremost, is the project structure, in other words, how the files are
 3. The `src/components/globals` folder contains three premade global components: the site header, footer, and layout (we'll talk about the layout in a bit).
 
 Most of where you'll work is directly inside `/src`. If you're curious to know what **every** file and directory in the starter does, checkout the documentation after reading this guide.
+
+---
 
 ### Creating pages
 
@@ -62,6 +64,8 @@ You'll notice we imported the component from `@globals`, we'll talk about that l
 The `<Layout />` global component is responsible for rendering your website's `<header />`, `<main />`, and `<footer />` tags. Not only that, it also injects page-specific SEO such as a page title and description. Refer to the documentation on `<Layout />` to see what props you can pass to it.
 
 Make sure to always include a layout component on every page!
+
+---
 
 ### Creating components
 
@@ -97,6 +101,8 @@ import { HelloWorld } from "@component/HelloWorld"
 
 Again, we'll talk about import aliasing in more detail in a bit!
 
+---
+
 ### Working with images and SVGs
 
 We mentioned it briefly before but there exists a `/src/assets` directory where you're supposed to throw in your images and SVGs. This directoy actually has two subdirectories that look like this:
@@ -123,6 +129,8 @@ import SomeIcon from "@icon/some-icon.svg
 
 Again we will talk about import aliases in more detail soon!
 
+---
+
 ### Configuring the default SEO
 
 astro-pwa-starter ships with an SEO configuration file to setup defaults for your website!
@@ -143,6 +151,8 @@ Make sure you fully customize every recommended field to take full advantage of 
 **Don't forget to also** customize the color themes present in `<Layout />` and `browserconfig.xml`!
 
 If you want to learn more about `seoConfig.ts`, checkout the documentation after finishing this guide.
+
+---
 
 ### Customizing SEO for a page
 
@@ -168,6 +178,8 @@ import { Layout } from "@globals"
 <Layout title="Not Found" disableIndexing="{true}"></Layout>
 ```
 
+---
+
 ### Using a custom favicon
 
 We recommend using a service like [Favycon](https://favycon.vercel.app/) to generate your website's favicons (this is what we used). Make sure you have a 512x512 maskable icon before generating your favicons!
@@ -175,6 +187,8 @@ We recommend using a service like [Favycon](https://favycon.vercel.app/) to gene
 After generation, you can directly paste your favicons straight into `/public/favicons`. Make sure to overwrite/replace all favicons in the directory. Afterwards, you'll be up and running with your own custom favicon.
 
 syncore-astro-starter is already pre-configured to pull favicons from `/public/favicons`, so as long as you used Favycon/have the exact same favicons we had originally then the starter will be able to automatically pull and inject your favicons in the final build.
+
+---
 
 ### Import aliases
 
