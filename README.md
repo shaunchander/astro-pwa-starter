@@ -28,6 +28,19 @@ Here is a list of core dependencies that astro-pwa-starter relies on in case you
 | [`astro-seo` ](<[https://](https://www.npmjs.com/package/astro-seo)>)                 | Provides a helpful component for configuring SEO.                                                     |
 | [`vite-plugin-pwa` ](<[https://](https://www.npmjs.com/package/vite-plugin-pwa)>)     | Configures a service-worker for offline-accessability and generates a webmanifest for PWA compliance. |
 
+## 🤖 Commands
+
+All commands are run from the root of the project, from a terminal:
+
+| Command                | Action                                             |
+| :--------------------- | :------------------------------------------------- |
+| `pnpm install`          | Installs dependencies                              |
+| `pnpm run dev`          | Starts local dev server at `localhost:3000`        |
+| `pnpm run build`        | Build your production site to `./dist/`            |
+| `pnpm run preview`      | Preview your build locally, before deploying       |
+| `pnpm run astro ...`    | Run CLI commands like `astro add`, `astro preview` |
+| `pnpm run astro --help` | Get help using the Astro CLI                       |
+
 ## 👋 Getting Started Guide
 
 ### Introduction and prerequisites
