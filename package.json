@@ -1,6 +1,6 @@
 {
 	"name": "astro-pwa-starter",
-	"version": "1.0.0",
+	"version": "0.0.0",
 	"private": false,
 	"scripts": {
 		"dev": "astro dev",
