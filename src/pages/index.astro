@@ -1,14 +1,16 @@
 ---
 // Component imports
 import { Layout } from "@globals"
-import logo from './logo.svg';
-import './App.css';
+import Logo from "@svg/logo.svg"
+import "@style/App.css"
+import "@style/index.css"
+import reportWebVitals from './reportWebVitals';
 ---
 
 <Layout title="Skypier Technologies">	
 	<div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={Logo} className="App-logo" alt="logo" />
         <p>
           We're currently building SkyPier, the future of web3 VPN.
         </p>
@@ -18,7 +20,7 @@ import './App.css';
           target="_blank"
           rel="noopener noreferrer"
         >
-          Whitepaper
+          Demo
         </a>
         <div className="ocean">
           <div className="wave"></div>
@@ -26,4 +28,6 @@ import './App.css';
         </div>
       </header>
     </div>
+	
+	reportWebVitals();
 </Layout>
