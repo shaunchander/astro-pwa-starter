@@ -1,0 +1,67 @@
+---
+// Component imports
+import { Layout } from "@globals"
+---
+
+<Layout title="Astro PWA Starter">
+	<section class="p-6 flex-1 flex flex-col justify-between">
+		<!-- Welcome -->
+		<div
+			class="max-w-xl mx-auto flex flex-col justify-center flex-1 space-y-10"
+		>
+			<div class="space-y-2 text-center">
+				<h1 class="text-4xl font-semibold">🟢 astro-pwa-starter</h1>
+				<p class="italic">
+					It works! Check out <span class="p-1 rounded-lg bg-gray-100 font-mono"
+						>/src/pages</span
+					> to get started.
+				</p>
+			</div>
+			<div>
+				<ul class="grid md:grid-cols-2 gap-4">
+					<li>
+						<a
+							href="https://github.com/shaunchander/astro-pwa-starter#-getting-started-guide"
+							class="p-6 rounded-2xl border border-gray-500 flex flex-col text-center hover:bg-blue-500 focus:bg-blue-500 hover:text-white duration-300 ease-in-out transition hover:border-blue-500 focus:border-blue-500"
+						>
+							<span class="text-xl font-medium">🚀 Getting started guide</span>
+						</a>
+					</li>
+					<li>
+						<a
+							href="https://github.com/shaunchander/astro-pwa-starter#-documentation"
+							class="p-6 rounded-2xl border border-gray-500 flex flex-col text-center hover:bg-blue-500 focus:bg-blue-500 hover:text-white duration-300 ease-in-out transition hover:border-blue-500 focus:border-blue-500"
+						>
+							<span class="text-xl font-medium">📖 Documentation</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- Twitter -->
+		<div class="flex justify-center">
+			<a
+				href="https://twitter.com/shaunchander"
+				target="_blank"
+				rel="noopener noreferrer"
+				class="relative inline-flex items-center rounded-full bg-gray-100 p-4 transition duration-300 ease-in-out hover:-translate-y-2 focus:-translate-y-2 group hover:text-white focus:text-white"
+			>
+				<div class="flex items-center space-x-4 relative z-10">
+					<img
+						src="https://pbs.twimg.com/profile_images/1626068871034667008/tc7dNg2B_400x400.jpg"
+						width={48}
+						height={48}
+						class="rounded-full object-cover"
+						alt=""
+					/>
+					<span class="text-lg font-bold">Built by @shaunchander</span>
+				</div>
+				<div
+					class="inline-block rounded-full absolute inset-0 bg-gradient-to-tr from-[#07f49e] to-[#42047e] opacity-0 group-hover:opacity-100 group-focus:opacity-100 duration-300 ease-in-out transition"
+				>
+				</div>
+			</a>
+		</div>
+	</section>
+</Layout>
