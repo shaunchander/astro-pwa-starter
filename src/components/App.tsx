@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from "src/assets/svg/logo.svg"
+import logo from "src/assets/svg/logo.svg"
 import "src/styles/App.css"
 
 // import Logo from "@svg/logo.svg"
@@ -9,9 +9,9 @@ function App() {
     return (
         <div className="App">
             <header className="App-header">
-                <img src={Logo} className="App-logo" alt="logo" />
+                <img src={logo} className="App-logo" alt="logo" />
                 <p>
-                    We're currently building SkyPier, the future of web3 VPN.
+                    Skypier - The future of Web3 Hybrid Cloud, Privacy Stack.
                 </p>
                 <a
                     className="App-link"
