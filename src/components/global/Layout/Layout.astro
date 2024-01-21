@@ -8,6 +8,11 @@ import "@style/tailwind.css"
 // Helper imports
 import { seoConfig } from "@util/seoConfig"
 
+// Component imports
+import { Footer, Header } from "@globals"
+import ExternalScripts from "@component/ExternalScripts.astro";
+// import reportWebVitals from "@component/reportWebVitals"
+
 // Props
 export interface Props {
 	/** Title of the page. */
@@ -161,14 +166,28 @@ const {
 		<script is:inline src="/registerSW.js"></script>
 		<link rel="manifest" href="/manifest.webmanifest" />
 	</head>
-	<body class="min-h-screen flex flex-col w-full overflow-x-hidden">
-		<main class="flex flex-1 flex-col h-[100%] w-full">
-			<slot />
-		</main>
+	
+	<Header />
+
+	<!-- <body class="min-h-screen flex flex-col w-full overflow-x-hidden"> -->
+	<body class="is-preload">
+		<!-- <main class="flex flex-1 flex-col h-[100%] w-full"> -->
+			<!-- Wrapper -->
+			<div id="wrapper">
+				<slot />
+			</div>
+		<!-- </main> -->
 
 		<script>
 			// This is a hack to get vite-plugin-pwa to generate a sw.js file.
 			// Do not remove this script tag.
+	  		// reportWebVitals();
 		</script>
 	</body>
+	
+	<Footer />
+
+	<!-- Scripts -->
+	<ExternalScripts />
+
 </html>

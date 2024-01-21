@@ -1,14 +1,11 @@
 ---
 // Component imports
-import { Layout, Footer, Header } from "@globals"
+import { Layout } from "@globals"
 import "@style/index.css"
-import reportWebVitals from "@component/reportWebVitals"
-import Logo from "@svg/logo.svg"
-import "@style/App.css"
-import BodyContent from "@component/body.astro"
-import ExternalScripts from "@component/ExternalScripts.astro";
+// import Logo from "@svg/logo.svg"
+import Contact from "@component/contact.astro"
+import LandingPageContent from "src/content/body.astro"
 import "@style/tailwind.css"
-import "@style/index.css"
 import "@style/css/main.css";
 import "@style/css/noscript.css";
 
@@ -18,16 +15,7 @@ const description = 'Privacy Stack for Web3 Hybrid Cloud';
 
 <Layout {title} {description}>	
 
-  <Header />
+  <LandingPageContent />
+  <Contact />
 
-  <BodyContent />
-  
-  <Footer />
-
-  <!-- Scripts -->
-  <ExternalScripts />
-
-  <script>
-	  // reportWebVitals();
-  </script>
 </Layout>
