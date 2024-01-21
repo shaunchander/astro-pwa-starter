@@ -9,8 +9,8 @@ import BodyContent from "@component/body.astro"
 import ExternalScripts from "@component/ExternalScripts.astro";
 import "@style/tailwind.css"
 import "@style/index.css"
-import '@/styles/css/main.css';
-import '@/styles/css/noscript.css';
+import "@style/css/main.css";
+import "@style/css/noscript.css";
 
 const title = 'Skypier Technologies';
 const description = 'Privacy Stack for Web3 Hybrid Cloud';
@@ -19,29 +19,8 @@ const description = 'Privacy Stack for Web3 Hybrid Cloud';
 <Layout {title} {description}>	
 
   <Header />
-  <BodyContent />
 
-  <!-- <span id="warning-container"><i data-reactroot=""></i></span
-  ><noscript>You need to enable JavaScript to run this app.</noscript>
-  <div id="root">
-    <div class="App">
-      <header class="App-header">
-        <img
-          src={Logo}
-          class="App-logo"
-          alt="skypier logo"
-        />
-        <p>Skypier - The future of Web3 Hybrid Cloud, Privacy Stack.</p>
-        <a
-          class="App-link"
-          href="https://skypier.io"
-          target="_blank"
-          rel="noopener noreferrer"
-          >See Demo</a
-        >
-      </header>
-    </div>
-  </div> -->
+  <BodyContent />
   
   <Footer />
 
