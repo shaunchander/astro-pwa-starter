@@ -77,9 +77,9 @@ input, select, textarea {
 		width: device-width;
 	}
 
-	body {
-		-ms-overflow-style: scrollbar;
-	}
+	/* body {
+		-ms-overflow-style: -ms-autohiding-scrollbar;
+	} */
 
 	@media screen and (max-width: 480px) {
 
@@ -122,15 +122,15 @@ input, select, textarea {
 		line-height: 1.75;
 	}
 
-		@media screen and (max-width: 1680px) {
+		/* @media screen and (max-width: 1680px) {
 
 			body, input, select, textarea {
 				font-size: 13pt;
 			}
 
-		}
+		} */
 
-		@media screen and (max-width: 1280px) {
+		@media screen and (min-width: 737px) {
 
 			body, input, select, textarea {
 				font-size: 12pt;
@@ -570,7 +570,7 @@ input, select, textarea {
 					padding-top: 3em;
 				}
 
-		@media screen and (max-width: 1680px) {
+		/* @media screen and (max-width: 1680px) {
 
 			.row {
 				display: flex;
@@ -813,9 +813,9 @@ input, select, textarea {
 							padding-top: 3em;
 						}
 
-		}
+		} */
 
-		@media screen and (max-width: 1280px) {
+		@media screen and (min-width: 737px) {
 
 			.row {
 				display: flex;
@@ -1060,7 +1060,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 980px) {
+		/* @media screen and (max-width: 980px) {
 
 			.row {
 				display: flex;
@@ -1303,7 +1303,7 @@ input, select, textarea {
 							padding-top: 3em;
 						}
 
-		}
+		} */
 
 		@media screen and (max-width: 736px) {
 
@@ -2175,7 +2175,7 @@ input, select, textarea {
 			opacity: 0;
 		}
 
-		@media screen and (max-width: 980px) {
+		/* @media screen and (max-width: 980px) {
 
 			.features {
 				display: block;
@@ -2191,7 +2191,7 @@ input, select, textarea {
 						border-top-width: 0 !important;
 					}
 
-		}
+		} */
 
 		@media screen and (max-width: 736px) {
 
@@ -2922,7 +2922,7 @@ input, select, textarea {
 			width: calc(33.33333% - 2.5em);
 		}
 
-		@media screen and (max-width: 1680px) {
+		/* @media screen and (max-width: 1680px) {
 
 			.split > * {
 				width: calc(50% - 2em);
@@ -2974,7 +2974,7 @@ input, select, textarea {
 					padding-top: 0;
 				}
 
-		}
+		} */
 
 		@media screen and (max-width: 736px) {
 
@@ -3085,7 +3085,7 @@ input, select, textarea {
 			opacity: 0;
 		}
 
-		@media screen and (max-width: 1680px) {
+		/* @media screen and (max-width: 1680px) {
 
 			.spotlights > section > .content {
 				padding: 4em 4em 2em 4em ;
@@ -3116,7 +3116,7 @@ input, select, textarea {
 					transform: translateY(1em);
 				}
 
-		}
+		} */
 
 		@media screen and (max-width: 736px) {
 
@@ -3206,20 +3206,20 @@ input, select, textarea {
 	}
 
 		.wrapper > .inner {
-			padding: 5em 5em 3em 5em ;
+			padding: 1em 5em 2em 5em ;
 			max-width: 100%;
 			width: 75em;
 		}
 
-			@media screen and (max-width: 1680px) {
+			/* @media screen and (max-width: 1680px) {
 
 				.wrapper > .inner {
 					padding: 4em 4em 2em 4em ;
 				}
 
-			}
+			} */
 
-			@media screen and (max-width: 1280px) {
+			@media screen and (min-width: 737px) {
 
 				.wrapper > .inner {
 					width: 100%;
@@ -3230,37 +3230,37 @@ input, select, textarea {
 			@media screen and (max-width: 736px) {
 
 				.wrapper > .inner {
-					padding: 3em 2em 1em 2em ;
+					padding: 1em 2em 1em 2em ;
 				}
 
 			}
 
 		.wrapper.alt {
-			background-color: #261c3e;
+			background-color: #222f44;
 		}
 
 		.wrapper.style1 {
-			background-color: #5e42a6;
+			background-color: #222f44;
 		}
 
 		.wrapper.style1-alt {
-			background-color: #493382;
+			background-color: #015871;
 		}
 
 		.wrapper.style2 {
-			background-color: #5052b5;
+			background-color: #222f44;
 		}
 
 		.wrapper.style2-alt {
-			background-color: #3e4094;
+			background-color: #222f44;
 		}
 
 		.wrapper.style3 {
-			background-color: #b74e91;
+			background-color: #222f44;
 		}
 
 		.wrapper.style3-alt {
-			background-color: #953d75;
+			background-color: #222f44;
 		}
 
 		.wrapper.fullscreen {
@@ -3283,7 +3283,7 @@ input, select, textarea {
 				height: 100vh;
 			}
 
-			@media screen and (max-width: 1280px) {
+			@media screen and (min-width: 737px) {
 
 				.wrapper.fullscreen {
 					min-height: calc(100vh - 2.5em);
@@ -3318,6 +3318,7 @@ input, select, textarea {
 			-ms-transition: opacity 1s ease, -ms-transform 1s ease;
 			transition: opacity 1s ease, transform 1s ease;
 			opacity: 1.0;
+			padding-bottom: 200px;
 		}
 
 		.wrapper.fade-up.inactive > .inner,
@@ -3370,7 +3371,7 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		background-color: #5e42a6;
+		background-color: #222f44;
 		cursor: default;
 		padding: 1.75em 2em;
 	}
@@ -3468,7 +3469,7 @@ input, select, textarea {
 		margin-left: 18em;
 	}
 
-		@media screen and (max-width: 1280px) {
+		@media screen and (min-width: 737px) {
 
 			#sidebar + #wrapper {
 				margin-left: 0;
@@ -3495,7 +3496,7 @@ input, select, textarea {
 		margin-left: 18em;
 	}
 
-		@media screen and (max-width: 1280px) {
+		@media screen and (min-width: 737px) {
 
 			#sidebar + #wrapper + #footer {
 				margin-left: 0;
@@ -3513,7 +3514,7 @@ input, select, textarea {
 
 	#footer > .inner .menu {
 		font-size: 0.8em;
-		color: rgba(255, 255, 255, 0.15);
+		/* color: rgba(255, 255, 255, 0.15); */
 	}
 
 	#header + #wrapper + #footer > .inner {
@@ -3524,7 +3525,7 @@ input, select, textarea {
 
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
-		background: #312450;
+		background: #282c34;
 		cursor: default;
 		height: 100vh;
 		left: 0;
@@ -3538,6 +3539,7 @@ input, select, textarea {
 	}
 
 		#sidebar > .inner {
+			padding: 0px 20px 0px 0px;
 			display: -moz-flex;
 			display: -webkit-flex;
 			display: -ms-flex;
@@ -3549,7 +3551,7 @@ input, select, textarea {
 			-moz-justify-content: center;
 			-webkit-justify-content: center;
 			-ms-justify-content: center;
-			justify-content: center;
+			justify-content: space-between;
 			-moz-transform: translateY(0);
 			-webkit-transform: translateY(0);
 			-ms-transform: translateY(0);
@@ -3765,10 +3767,10 @@ input, select, textarea {
 			}
 
 			#sidebar nav a:after {
-				background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: linear-gradient(to right, #5e42a6, #b74e91);
+				background-image: -moz-linear-gradient(to right, #222f44, #003153);
+				background-image: -webkit-linear-gradient(to right, #222f44, #003153);
+				background-image: -ms-linear-gradient(to right, #222f44, #003153);
+				background-image: linear-gradient(to right, #222f44, #003153);
 				-moz-transition: max-width 0.2s ease;
 				-webkit-transition: max-width 0.2s ease;
 				-ms-transition: max-width 0.2s ease;
@@ -3800,7 +3802,7 @@ input, select, textarea {
 			opacity: 0;
 		}
 
-		@media screen and (max-width: 1280px) {
+		@media screen and (min-width: 737px) {
 
 			#sidebar {
 				height: 3.5em;
@@ -3884,13 +3886,13 @@ input, select, textarea {
 			font-size: 1.25em;
 		}
 
-			@media screen and (max-width: 980px) {
+			/* @media screen and (max-width: 980px) {
 
 				#intro p br {
 					display: none;
 				}
 
-			}
+			} */
 
 			@media screen and (max-width: 736px) {
 
@@ -3900,7 +3902,7 @@ input, select, textarea {
 
 			}
 
-		@media screen and (max-width: 1280px) {
+		@media screen and (min-width: 737px) {
 
 			#intro {
 				background-attachment: scroll;

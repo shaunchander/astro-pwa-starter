@@ -3,16 +3,17 @@
 }
 
 .App-logo {
-    height: 10vmin;
-    /* margin: 0 1%; */
+    height: 3.5em;
+    float: left;
+    margin: 0 1%;
     pointer-events: none;
 }
 
-/* @media (prefers-reduced-motion: no-preference) {
+@media (prefers-reduced-motion: no-preference) {
     .App-logo {
         animation: App-logo-spin infinite 15s linear;
     }
-} */
+}
 
 .App-header {
     background-color: #282c34;
@@ -34,11 +35,11 @@
 
     0%,
     100% {
-        transform: translate3d(0, -35px, 0);
+        transform: translate3d(0, -5px, 0);
     }
 
     50% {
-        transform: translate3d(0, 15px, 0);
+        transform: translate3d(0, 5px, 0);
     }
 }
 
@@ -49,13 +50,13 @@ body {
 
 body {
     background: radial-gradient(ellipse at center, rgba(255, 254, 234, 1) 0%, rgba(255, 254, 234, 1) 35%, #B7E8EB 100%);
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .ocean {
-    height: 5%;
+    height: 0%;
     width: 100%;
-    position: absolute;
+    position: sticky;
     bottom: 0;
     left: 0;
     background: #015871;
