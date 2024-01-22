@@ -1,3 +1,0 @@
-<!-- About -->
-
-Coming Soon... 

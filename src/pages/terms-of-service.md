@@ -1,4 +1,5 @@
 ---
+layout: import { Layout } from "@globals"
 title: Terms of Service
 ---
 
