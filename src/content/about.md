@@ -1,5 +1,5 @@
 ---
-layout: import { Layout } from "@globals"
+layout: src/components/globals/layouts/Layout.astro
 title: about
 ---
 
