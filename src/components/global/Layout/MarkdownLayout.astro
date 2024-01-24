@@ -9,8 +9,11 @@ import "@style/tailwind.css"
 import { seoConfig } from "@util/seoConfig"
 
 // Component imports
-import { Footer, Header } from "@globals"
+import { Footer } from "@globals"
 import ExternalScripts from "@component/ExternalScripts.astro";
+import Logo from "@svg/logo.svg"
+import "@style/css/main.css";
+import "@style/css/noscript.css";
 // import reportWebVitals from "@component/reportWebVitals"
 
 // Props
@@ -167,8 +170,17 @@ const {
 		<link rel="manifest" href="/manifest.webmanifest" />
 	</head>
 	
-	<Header />
-	<div class="container" style="max-width:1280px; right: 20%; left: 20%;">
+	<section id="sidebar">
+		<div class="inner">
+		<img
+		src={Logo}
+		class="App-logo"
+		alt="skypier logo"
+		/>
+		</div>
+	</section> 
+		
+	<div class="container">
 		<slot />
 	</div>
 	<Footer />

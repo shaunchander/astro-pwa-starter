@@ -1,5 +1,5 @@
 ---
-# layout: ../components/global/Layout/MarkdownLayout.astro
+layout: ../components/global/Layout/MarkdownLayout.astro
 title: Privacy Policy
 author: Skypier
 description: Privacy Policy
