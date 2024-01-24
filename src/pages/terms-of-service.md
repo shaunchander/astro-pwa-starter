@@ -1,13 +1,11 @@
 ---
-layout: import { Layout } from "@globals"
+# layout: ../components/global/Layout/MarkdownLayout.astro
 title: Terms of Service
+author: Skypier
+description: Terms of Service
 ---
 
 <!-- Terms of Service -->
-
-# Draft Document Formatting
-
-Last edited time: January 22, 2024 2:07 PM
 
 # WEBSITE TERMS OF USE
 

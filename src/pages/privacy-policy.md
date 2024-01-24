@@ -1,13 +1,11 @@
 ---
-layout: import { Layout } from "@globals"
+# layout: ../components/global/Layout/MarkdownLayout.astro
 title: Privacy Policy
+author: Skypier
+description: Privacy Policy
 ---
 
 <!-- Privacy Policy -->
-
-# Draft Document Formatting
-
-Last edited time: January 22, 2024 2:11 PM
 
 # Privacy Policy
 
