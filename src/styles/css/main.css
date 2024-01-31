@@ -112,6 +112,30 @@ input, select, textarea {
 			transition: none !important;
 		}
 
+
+	.glassed-container{
+		background-color: rgb(255 255 255/var(--tw-bg-opacity));
+		--tw-bg-opacity: 0.07;
+		padding-left: 1.25rem;
+		padding-right: 1.25rem;
+		padding-top: 2rem;
+		padding-bottom: 0.5rem;
+		border-radius: 1rem;
+		max-width: 950px;
+		position: centered;
+		margin: auto;
+		color: #fff;
+	}
+
+	.container{
+		padding-left: 1.25rem;
+		padding-right: 1.25rem;
+		padding-top: 2rem;
+		padding-bottom: 1rem;
+		max-width: 950px;
+		margin: auto;
+	}
+
 /* Type */
 
 	body, input, select, textarea {
@@ -1833,7 +1857,7 @@ input, select, textarea {
 		transition: border-color 0.2s ease;
 		background-color: transparent;
 		border: solid 1px !important;
-		border-color: rgba(255, 255, 255, 0.15) !important;
+		border-color: rgba(188, 234, 255, 0.8) !important;
 		border-radius: 3em;
 		color: #ffffff !important;
 		cursor: pointer;
@@ -2316,7 +2340,9 @@ input, select, textarea {
 		background: rgba(255, 255, 255, 0.05);
 		border-radius: 0.25em;
 		border: none;
-		border: solid 1px rgba(255, 255, 255, 0.15);
+		/* border: solid 1px rgba(255, 255, 255, 0.15); */
+		border: solid 1px rgba(188, 234, 255, 0.8) !important;
+		/* ddd */
 		color: inherit;
 		display: block;
 		outline: 0;
@@ -3875,10 +3901,11 @@ input, select, textarea {
 
 	#intro {
 		background-attachment: fixed;
-		background-image: url("images/intro.svg");
+		background-image: url("images/bg-home.svg");
 		background-position: top right;
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
+		background-size: cover;
 	}
 
 		#intro p {
