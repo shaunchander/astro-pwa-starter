@@ -4,7 +4,7 @@ import Logo from "@svg/skypier_baseline.svg"
 
 <!-- Intro -->
     <!-- <section id="intro" class="wrapper style1 fullscreen fade-up"> -->
-    <section id="intro" class="wrapper style1 fullscreen fade-up">
+    <section id="intro" class="wrapper fullscreen fade-up">
         <img
         src={Logo}
         class="App-logo"
@@ -47,20 +47,22 @@ import Logo from "@svg/skypier_baseline.svg"
     </section>
 
 <!-- One -->
-    <section id="intention" class="wrapper style2 spotlights">
+    <section id="intention" class="wrapper style5 spotlights">
         <section>
             <!-- <a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a> -->
             <div class="content">
                 <div class="inner">
                     <h2>Problems</h2>
-                    <ul>
-                        <li>Centralized Network Providers could be a single point of failure if they are compromised by bad actors</li>
-                        <li>Centralized Network Providers are often closed-source with a false sense of security</li>
-                        <li>Existing decentralized solutions require Partners to earn in their company's cryptocurrency</li>
-                    </ul>
-                    <ul class="actions">
-                        <!-- <li><a href="generic.html" class="button">Learn more</a></li> -->
-                    </ul>
+                    <div class="glassed-container">
+                        <ul>
+                            <li>Centralized Network Providers could be a single point of failure if they are compromised by bad actors</li>
+                            <li>Centralized Network Providers are often closed-source with a false sense of security</li>
+                            <li>Existing decentralized solutions require Partners to earn in their company's cryptocurrency</li>
+                        </ul>
+                        <ul class="actions">
+                            <!-- <li><a href="generic.html" class="button">Learn more</a></li> -->
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
@@ -69,15 +71,17 @@ import Logo from "@svg/skypier_baseline.svg"
             <div class="content">
                 <div class="inner">
                     <h2>Solutions</h2>
-                    <ul>
-                        <li>Any with internet access to be our Partner as a Node Host and earn in their preferred currency</li>
-                        <li>each node operates independently to compartmentalize information through our network</li>
-                        <li>We are completely open-sourced, allowing anyone to inspect and provide feedback to improve our infrastructure, UX, and security</li>
-                        <li>Multiple independent nodes allows us to have competitive pricing without compromising quality</li>
-                    </ul>
-                    <ul class="actions">
-                        <!-- <li><a href="generic.html" class="button">Learn more</a></li> -->
-                    </ul>
+                    <div class="glassed-container">
+                        <ul>
+                            <li>Any with internet access to be our Partner as a Node Host and earn in their preferred currency</li>
+                            <li>each node operates independently to compartmentalize information through our network</li>
+                            <li>We are completely open-sourced, allowing anyone to inspect and provide feedback to improve our infrastructure, UX, and security</li>
+                            <li>Multiple independent nodes allows us to have competitive pricing without compromising quality</li>
+                        </ul>
+                        <ul class="actions">
+                            <!-- <li><a href="generic.html" class="button">Learn more</a></li> -->
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
@@ -96,10 +100,28 @@ import Logo from "@svg/skypier_baseline.svg"
     </section> -->
 
 <!-- Two -->
-    <section id="team" class="wrapper style3 fade-up">
+    <section id="team" class="wrapper style5">
         <div class="inner">
-            <h2>Who are we?</h2>
-            <p>Our team are made up of product leaders, engineers, and developers Palantir, French Military, Akamai Technologies and Lucid Motors. We have a track-record of creating mission-critical decentralized security products for mission critical organizations and we have the partnerships and resources to help you build your own decentralized network.</p>
+            
+            <div class="container">
+                <h1>Who we are</h1>
+            </div>
+            <div class="gradient-container">
+                <p>Our team are made up of product leaders, engineers, and developers Palantir, French Military, Akamai Technologies and Lucid Motors. We have a track-record of creating mission-critical decentralized security products for mission critical organizations and we have the partnerships and resources to help you build your own decentralized network.</p>               
+            </div>
+            <div class="container">
+                <div class="flex gap-8">                
+                    <div class="h-24 w-24 overflow-hidden rounded-full ring-2 ring-gray-700 dark:ring-gray-100">
+                        <img src="https://media.licdn.com/dms/image/C4E03AQGsux9W87inqg/profile-displayphoto-shrink_800_800/0/1660938816326?e=1712188800&v=beta&t=tvF3lHJZe1a-ux8OUw9dQ7jAA6cIuI7ttu3KCjxtWX0" alt=""/>
+                    </div>
+                    <div class="h-24 w-24 overflow-hidden rounded-full ring-2 ring-gray-700 dark:ring-gray-100">
+                        <img src="https://avatars.githubusercontent.com/u/62996031?v=4" alt=""/>
+                    </div>
+                    <div class="h-24 w-24 overflow-hidden rounded-full ring-2 ring-gray-700 dark:ring-gray-100">
+                        <img src="https://media.licdn.com/dms/image/C4E03AQEDBp0dRDnHsQ/profile-displayphoto-shrink_800_800/0/1517533602354?e=1712188800&v=beta&t=oxpVATUdPc9BPNj33IMY_AS1yKT5X_3-9H14JNlf2uA" alt=""/>
+                    </div>
+                </div>
+            </div> 
             <!-- <div class="features">
                 <section>
                     <span class="icon solid major fa-code"></span>
