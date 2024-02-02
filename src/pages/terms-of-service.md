@@ -1,5 +1,5 @@
 ---
-# layout: ../components/global/Layout/MarkdownLayout.astro
+layout: ../components/global/Layout/MarkdownLayout.astro
 title: Terms of Service
 author: Skypier
 description: Terms of Service

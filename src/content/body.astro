@@ -36,7 +36,7 @@ import Logo from "@svg/skypier_baseline.svg"
             <div class="container">
                 <form action="action_page.php">
                     <h2>Join the waitlist today:</h2>
-                    <div style="max-width:450px; display:flex;">
+                    <div style="max-width:550px; display:flex;">
                       <input type="text" placeholder="Email address" name="mail" required>
                       <pre>    </pre>
                       <input type="submit" value="Join!">
@@ -50,7 +50,7 @@ import Logo from "@svg/skypier_baseline.svg"
     <section id="intention" class="wrapper style5 spotlights">
         <section>
             <!-- <a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a> -->
-            <div class="content">
+            <div class="content container">
                 <div class="inner">
                     <h2>Problems</h2>
                     <div class="glassed-container">
@@ -68,7 +68,7 @@ import Logo from "@svg/skypier_baseline.svg"
         </section>
         <section>
             <!-- <a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a> -->
-            <div class="content">
+            <div class="content container">
                 <div class="inner">
                     <h2>Solutions</h2>
                     <div class="glassed-container">
@@ -100,27 +100,73 @@ import Logo from "@svg/skypier_baseline.svg"
     </section> -->
 
 <!-- Two -->
-    <section id="team" class="wrapper style5">
+    <section id="team" class="wrapper style1">
         <div class="inner">
             
             <div class="container">
                 <h1>Who we are</h1>
             </div>
-            <div class="gradient-container">
+            <div class="gradient-container drop-shadow-md">
                 <p>Our team are made up of product leaders, engineers, and developers Palantir, French Military, Akamai Technologies and Lucid Motors. We have a track-record of creating mission-critical decentralized security products for mission critical organizations and we have the partnerships and resources to help you build your own decentralized network.</p>               
             </div>
             <div class="container">
-                <div class="flex gap-8">                
-                    <div class="h-24 w-24 overflow-hidden rounded-full ring-2 ring-gray-700 dark:ring-gray-100">
-                        <img src="https://media.licdn.com/dms/image/C4E03AQGsux9W87inqg/profile-displayphoto-shrink_800_800/0/1660938816326?e=1712188800&v=beta&t=tvF3lHJZe1a-ux8OUw9dQ7jAA6cIuI7ttu3KCjxtWX0" alt=""/>
-                    </div>
-                    <div class="h-24 w-24 overflow-hidden rounded-full ring-2 ring-gray-700 dark:ring-gray-100">
-                        <img src="https://avatars.githubusercontent.com/u/62996031?v=4" alt=""/>
-                    </div>
-                    <div class="h-24 w-24 overflow-hidden rounded-full ring-2 ring-gray-700 dark:ring-gray-100">
-                        <img src="https://media.licdn.com/dms/image/C4E03AQEDBp0dRDnHsQ/profile-displayphoto-shrink_800_800/0/1517533602354?e=1712188800&v=beta&t=oxpVATUdPc9BPNj33IMY_AS1yKT5X_3-9H14JNlf2uA" alt=""/>
-                    </div>
-                </div>
+                <ul>
+                    <li class="flex gap-x-6 py-2 px-8">
+                        <div class="flex min-w-0 gap-x-4">
+                          <img class="grayscale hover:grayscale-0 h-24 w-24 overflow-hidden rounded-full ring-2 ring-gray-700 dark:ring-gray-100" src="https://media.licdn.com/dms/image/C4E03AQGsux9W87inqg/profile-displayphoto-shrink_800_800/0/1660938816326?e=1712188800&v=beta&t=tvF3lHJZe1a-ux8OUw9dQ7jAA6cIuI7ttu3KCjxtWX0" alt="avatar">
+                          <div class="min-w-0 flex-auto">
+                            <p class="text-xl font-semibold leading-6 text-gray-50 mb-1">Ting Lik To</p>
+                            <p class="truncate text-lg leading-1 text-gray-500">
+                                <a href="https://www.linkedin.com/in/tinglik/" target="_blank" rel="noopener noreferrer">
+                                  <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/tinglik/" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+                          <p class="text-sm leading-6 text-gray-550">CEO</p>
+                        </div>
+                      </li>
+                      <li class="flex gap-x-6 py-2 px-8">
+                        <div class="flex min-w-0 gap-x-4">
+                          <img class="grayscale hover:grayscale-0 h-24 w-24 overflow-hidden rounded-full ring-2 ring-gray-700 dark:ring-gray-100" src="https://avatars.githubusercontent.com/u/62996031?v=4" alt="avatar">
+                          <div class="min-w-0 flex-auto">
+                            <p class="text-xl font-semibold text-gray-50 mb-1">Smolgroot</p>
+                            <p class="truncate text-lg leading-1 text-gray-500">
+                                <a href="https://x.com/rootshe11" target="_blank" rel="noopener noreferrer">
+                                  <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="https://github.com/smolgroot" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+                          <p class="text-sm leading-6 text-gray-550">CTO</p>
+                        </div>
+                      </li>
+                      <li class="flex gap-x-6 py-2 px-8">
+                        <div class="flex min-w-0 gap-x-4">
+                          <img class="grayscale hover:grayscale-0 h-24 w-24 overflow-hidden rounded-full ring-2 ring-gray-700 dark:ring-gray-100" src="https://media.licdn.com/dms/image/C4E03AQEDBp0dRDnHsQ/profile-displayphoto-shrink_800_800/0/1517533602354?e=1712188800&v=beta&t=oxpVATUdPc9BPNj33IMY_AS1yKT5X_3-9H14JNlf2uA" alt="avatar">
+                          <div class="min-w-0 flex-auto">
+                            <p class="text-xl font-semibold leading-6 text-gray-50 mb-1">Luis Saldarriaga</p>
+                            <p class="truncate text-lg leading-1 text-gray-500">
+                                  <a href="https://www.linkedin.com/in/luis-saldarriaga-0573a5a9/" target="_blank" rel="noopener noreferrer">
+                                  <i class="fab fa-linkedin"></i>
+                              </a>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+                          <p class="text-sm leading-6 text-gray-550">Founding Engineer</p>
+                        </div>
+                      </li>
+                        
+                  </ul>
             </div> 
             <!-- <div class="features">
                 <section>
