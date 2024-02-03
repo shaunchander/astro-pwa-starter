@@ -3320,8 +3320,9 @@ input, select, textarea {
 			background-color: #171d24;
 		}
 
-		.style5 {
+		.wrapper.style5 {
 			background-color: rgb(21, 28, 34) !important;
+			background: linear-gradient(1.21deg,rgba(38,30,62,.37) 1.19%,#171027 99.14%)
 		}
 
 		.wrapper.fullscreen {
