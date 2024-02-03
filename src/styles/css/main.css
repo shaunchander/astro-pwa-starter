@@ -281,6 +281,14 @@ input, select, textarea {
 		font-size: 0.6em;
 	}
 
+	.highlight-text {
+		font-weight: bolder;
+		background-image: linear-gradient(306.53deg,#5df 25.8%,#85a5fa 32.75%,#f372ff 44.42%,#a975f8 55.44%);
+		-webkit-background-clip: text;
+		background-clip: text;
+		color: transparent;
+	}
+
 	@media screen and (max-width: 736px) {
 
 		h1 {
@@ -3418,12 +3426,17 @@ input, select, textarea {
 
 /* Header */
 
+	.logo-link:before{
+		background: transparent!important;
+	}
+
+
 	#header {
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		background-color: #222f44;
+		background-color: #000000;
 		cursor: default;
 		padding: 1.75em 2em;
 	}

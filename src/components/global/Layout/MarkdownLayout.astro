@@ -11,7 +11,7 @@ import { seoConfig } from "@util/seoConfig"
 // Component imports
 import { Footer } from "@globals"
 import ExternalScripts from "@component/ExternalScripts.astro";
-import Logo from "@svg/logo.svg"
+import Logo from "@svg/skypier_baseline.svg"
 import "@style/css/main.css";
 import "@style/css/noscript.css";
 // import reportWebVitals from "@component/reportWebVitals"
@@ -172,15 +172,17 @@ const {
 	
 	<section id="sidebar">
 		<div class="inner">
-		<img
-		src={Logo}
-		class="App-logo"
-		alt="skypier logo"
-		/>
+			<a href="/index.html">
+				<img
+				src={Logo}
+				class="App-logo-header"
+				alt="skypier logo"
+				/>
+			</a>
 		</div>
 	</section> 
 		
-	<div class="container">
+	<div class="container mt-20">
 		<slot />
 	</div>
 	<Footer />
