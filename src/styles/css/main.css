@@ -287,6 +287,21 @@ input, select, textarea {
 		-webkit-background-clip: text;
 		background-clip: text;
 		color: transparent;
+		background-size: 200% 200%;
+		height: 100vh;
+		animation: gradient 10s ease infinite;
+	}
+
+	@keyframes gradient {
+		0% {
+			background-position: 0% 50%;
+		}
+		50% {
+			background-position: 100% 50%;
+		}
+		100% {
+			background-position: 0% 50%;
+		}
 	}
 
 	@media screen and (max-width: 736px) {

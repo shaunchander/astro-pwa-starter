@@ -5,6 +5,9 @@ import { SEO } from "astro-seo"
 // Style imports
 import "@style/tailwind.css"
 
+// Animations
+import "aos/dist/aos.css"
+
 // Helper imports
 import { seoConfig } from "@util/seoConfig"
 
@@ -41,6 +44,7 @@ const {
 	image,
 	disableIndexing = false
 } = Astro.props as Props
+
 ---
 
 <html lang="en">
@@ -163,7 +167,7 @@ const {
 
 		<!-- Service worker registration. -->
 
-		<script is:inline src="/registerSW.js"></script>
+		<!-- <script is:inline src="/registerSW.js"></script> -->
 		<link rel="manifest" href="/manifest.webmanifest" />
 	</head>
 	
@@ -182,6 +186,12 @@ const {
 			// This is a hack to get vite-plugin-pwa to generate a sw.js file.
 			// Do not remove this script tag.
 	  		// reportWebVitals();
+		</script>
+		 <!-- animate on scroll script -->
+		<script>
+			import { aosInit } from "@js/aos";
+			// runs on initial page load
+			aosInit();
 		</script>
 	</body>
 	
