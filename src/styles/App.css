@@ -11,7 +11,7 @@
 
 .App-logo-header {
     height: 3.5em;
-    float: left;
+    /* float: left; */
     margin: 0 1%;
     pointer-events: none;
 }

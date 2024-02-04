@@ -1893,7 +1893,7 @@ input, select, textarea {
 		color: #ffffff !important;
 		cursor: pointer;
 		display: inline-block;
-		font-size: 0.7em;
+		font-size: 8pt;
 		font-weight: bold;
 		height: calc(4.75em + 2px);
 		letter-spacing: 0.25em;
@@ -3290,6 +3290,11 @@ input, select, textarea {
 					padding: 1em 2em 1em 2em ;
 				}
 
+				.wrapper{
+					width: 100%;
+					margin: 0;
+				}
+
 			}
 
 		.wrapper.alt {
@@ -3346,10 +3351,6 @@ input, select, textarea {
 			}
 
 			@media screen and (min-width: 737px) {
-
-				.wrapper.fullscreen {
-					min-height: calc(100vh - 2.5em);
-				}
 
 					body.is-ie .wrapper.fullscreen {
 						height: calc(100vh - 2.5em);
@@ -3426,7 +3427,6 @@ input, select, textarea {
 		}
 
 /* Header */
-
 	.logo-link:before{
 		background: transparent!important;
 	}
@@ -3531,26 +3531,6 @@ input, select, textarea {
 
 /* Wrapper (main) */
 
-	#sidebar + #wrapper {
-		margin-left: 18em;
-	}
-
-		@media screen and (min-width: 737px) {
-
-			#sidebar + #wrapper {
-				margin-left: 0;
-				padding-top: 3.5em;
-			}
-
-		}
-
-		@media screen and (max-width: 736px) {
-
-			#sidebar + #wrapper {
-				padding-top: 0;
-			}
-
-		}
 
 	#header + #wrapper > .wrapper > .inner {
 		margin: 0 auto;
@@ -3565,6 +3545,15 @@ input, select, textarea {
 		@media screen and (min-width: 737px) {
 
 			#sidebar + #wrapper + #footer {
+				margin-left: 0;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			#sidebar + #wrapper + #footer {
+				padding-top: 0;
 				margin-left: 0;
 			}
 
@@ -3591,7 +3580,7 @@ input, select, textarea {
 
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
-		background: rgba(0, 0, 0, 0.85);
+		background: rgba(0, 0, 0, 0.95);
 		cursor: default;
 		height: 100vh;
 		left: 0;
@@ -3933,10 +3922,69 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#sidebar {
-				display: none;
+				height: 3.5em;
+				left: 0;
+				line-height: 3.5em;
+				overflow: hidden;
+				padding: 0;
+				text-align: center;
+				top: 0;
+				width: 100%;
 			}
 
+				#sidebar > .inner {
+					-moz-flex-direction: row;
+					-webkit-flex-direction: row;
+					-ms-flex-direction: row;
+					flex-direction: row;
+					-moz-align-items: -moz-stretch;
+					-webkit-align-items: -webkit-stretch;
+					-ms-align-items: -ms-stretch;
+					align-items: stretch;
+					height: inherit;
+					line-height: inherit;
+				}
+
+				#sidebar nav {
+					height: inherit;
+					line-height: inherit;
+				}
+
+					#sidebar nav ul {
+						display: -moz-flex;
+						display: -webkit-flex;
+						display: -ms-flex;
+						display: flex;
+						height: inherit;
+						line-height: inherit;
+						margin: 0;
+					}
+
+						#sidebar nav ul li {
+							display: block;
+							height: inherit;
+							line-height: inherit;
+							margin: 0 0 0 2em;
+							padding: 0;
+						}
+
+					#sidebar nav a {
+						height: inherit;
+						line-height: inherit;
+						padding: 0;
+					}
+
+						#sidebar nav a:after {
+							background-image: none;
+							background-color: #b74e91;
+						}
+
 		}
+
+		#astronav-menu{
+			border: none!important;
+		}
+
 
 /* Intro */
 
@@ -3964,7 +4012,7 @@ input, select, textarea {
 			@media screen and (max-width: 736px) {
 
 				#intro p {
-					font-size: 1em;
+					font-size: 0.8em;
 				}
 
 			}

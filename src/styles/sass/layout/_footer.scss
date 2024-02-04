@@ -6,33 +6,34 @@
 
 /* Footer */
 
-	#footer {
-		#sidebar + #wrapper + & {
-			margin-left: _size(sidebar-width);
+	// #footer {
 
-			@include breakpoint('<=large') {
-				margin-left: 0;
-			}
-		}
+	// 	#sidebar + #wrapper  {
+	// 		margin-left: 0;
 
-		> .inner {
-			a {
-				border-bottom-color: _palette(border);
+	// 		@include breakpoint('<=large') {
+	// 			margin-left: 0;
+	// 		}
+	// 	}
 
-				&:hover {
-					border-bottom-color: transparent;
-				}
-			}
+	// 	> .inner {
+	// 		a {
+	// 			border-bottom-color: _palette(border);
 
-			.menu {
-				font-size: 0.8em;
-				color: _palette(border);
-			}
-		}
+	// 			&:hover {
+	// 				border-bottom-color: transparent;
+	// 			}
+	// 		}
 
-		#header + #wrapper + & {
-			> .inner {
-				margin: 0 auto;
-			}
-		}
-	}
+	// 		.menu {
+	// 			font-size: 0.8em;
+	// 			color: _palette(border);
+	// 		}
+	// 	}
+
+	// 	#header + #wrapper + & {
+	// 		> .inner {
+	// 			margin: 0 auto;
+	// 		}
+	// 	}
+	// }
