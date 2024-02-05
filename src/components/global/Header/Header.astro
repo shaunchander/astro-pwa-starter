@@ -1,28 +1,35 @@
 ---
-import Logo from "@svg/logo.svg"
+import Logo from "@svg/skypier_baseline.svg"    
+import { Astronav, MenuItems, MenuIcon,  StickyHeader } from "astro-navbar";
 ---
-
-<!-- Header -->
-<!-- <header id="header">
-</header> -->
-
 <section id="sidebar">
-    <div class="inner">
-        <p><a href="/index.html" class="logo">
-            <img
-            src={Logo}
-            class="App-logo"
-            alt="skypier logo"
-            />			
-        </a></p>
-        <nav>
-            <ul>
-                <li><a href="#intro">What's Skypier?</a></li>
-                <li><a href="#intention">Why Skypier?</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
+    <StickyHeader>  
+        <Astronav>
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-0">
+                <a href="/index.html" class="logo-link">
+                    <img
+                    src={Logo}
+                    class="App-logo-header"
+                    alt="skypier logo"
+                    style="padding: 5px 5px 5px 1rem"
+                    />			
+                </a>
+                <MenuItems class="hidden lg:flex">
+                    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                        <ul>
+                            <li><a href="#intro">What's Skypier?</a></li>
+                            <li><a href="#intention">Why Skypier?</a></li>
+                            <li><a href="#team">About us</a></li>
+                            <li><a href="#contact">Contact</a></li>                    
+                        </ul>
+                    </div>
+                </MenuItems>
+                <div class="empty"></div>
+                <div class="block lg:hidden">
+                    <MenuIcon class="w-4 h-4 text-gray-800" />
+                </div>
+            </div>
+        </Astronav>
+    </StickyHeader>
 </section> 
 

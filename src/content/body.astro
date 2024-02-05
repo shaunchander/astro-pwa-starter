@@ -1,76 +1,100 @@
 ---
 import Logo from "@svg/logo.svg"
+import Luis from "@img/luis.webp"
+import Ting from "@img/ting.webp"
+import Groot from "@img/groot.webp"
+import "aos/dist/aos.css"; // AOS styles
 ---
 
 <!-- Intro -->
     <!-- <section id="intro" class="wrapper style1 fullscreen fade-up"> -->
-    <section id="intro" class="wrapper style1 fullscreen fade-up">
-        <img
-        src={Logo}
-        class="App-logo"
-        alt="skypier logo"
-        style="height: 35vh;"
-        />
+    <section id="intro" class="wrapper fullscreen fade-up">
         <div class="inner">
-            <h1>Skypier</h1>
-            <p>
-                The future of Decentralized Hybrid Cloud, Privacy Stack. <br /><br />
-
-                Skypier is the gateway that empowers people to express and explore anonymously without compromising their privacy or quality of access. 
-                Our Token Gated decentralized Network is a subscription based peer-to-peer VPN that enable anyone to create their own hybrid cloud. 
-            </p>
-            <ul class="actions">
-                <li><a href="https://skypier.io"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="button scrolly">Demo</a>
-                </li>
-                <li><a href="#contact" class="button scrolly">Contact</a></li>
-            </ul>
-
-            <form action="action_page.php">
-            <h2>Join the waitlist today:</h2>
-                <div class="container" style="max-width:450px; display:flex;">
-                  <input type="text" placeholder="Email address" name="mail" required>
-                  <pre>    </pre>
-                  <input type="submit" value="Join!">
+            <div class="container">
+                <div class="md:flex">
+                  <div class="md:shrink-0 flex justify-center items-center" data-aos="fade-up" data-aos-duration="1500">
+                    <img
+                    src={Logo}
+                    class="App-logo"
+                    alt="skypier logo"
+                    style="height: 25vh;"
+                    />
+                  </div>
+                  <div class="p-8 m-auto md:text-left sm:text-center">
+                      <h1 class="text-gray-100 text-5xl" data-aos="fade-up" data-aos-duration="1500">
+                          Embark securely on <span class="highlight-text">web3</span>
+                      </h1>
+                      <h2 class="text-gray-400 text-3xl" data-aos="fade-up" data-aos-duration="1000">
+                          The future of Decentralized
+                          Hybrid Cloud and Privacy Stack.
+                      </h2>
+                  </div>
                 </div>
-              </form>
+            </div>
+            <div class="glassed-container" data-aos="fade-up" data-aos-duration="2000">
+                <p>
+                    Skypier is the gateway that empowers people to express and explore anonymously without compromising their privacy or quality of access. 
+                    Our Token Gated decentralized Network is a subscription based peer-to-peer VPN that enable anyone to create their own hybrid cloud. 
+                </p>
+                <ul class="actions">
+                    <li><a href="https://skypier.io"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="button scrolly">Demo</a>
+                    </li>
+                    <li><a href="#contact" class="button scrolly">Contact</a></li>
+                </ul>
+               
+            </div>
+            <div class="container">
+                <form action="action_page.php">
+                    <h2>Join the waitlist today:</h2>
+                    <div style="max-width:550px; display:flex;">
+                      <input type="text" placeholder="Email address" name="mail" required>
+                      <pre>    </pre>
+                      <input type="submit" value="Join!">
+                    </div>
+                </form>
+            </div>
         </div>
     </section>
 
 <!-- One -->
-    <section id="intention" class="wrapper style2 spotlights">
+    <section id="intention" class="wrapper style5 spotlights">
         <section>
             <!-- <a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a> -->
-            <div class="content">
+            <div class="content container">
                 <div class="inner">
                     <h2>Problems</h2>
-                    <ul>
-                        <li>Centralized Network Providers could be a single point of failure if they are compromised by bad actors</li>
-                        <li>Centralized Network Providers are often closed-source with a false sense of security</li>
-                        <li>Existing decentralized solutions require Partners to earn in their company's cryptocurrency</li>
-                    </ul>
-                    <ul class="actions">
-                        <!-- <li><a href="generic.html" class="button">Learn more</a></li> -->
-                    </ul>
+                    <div class="glassed-container" data-aos="fade-up" data-aos-duration="1500">
+                        <ul>
+                            <li>Centralized Network Providers could be a single point of failure if they are compromised by bad actors</li>
+                            <li>Centralized Network Providers are often closed-source with a false sense of security</li>
+                            <li>Existing decentralized solutions require Partners to earn in their company's cryptocurrency</li>
+                        </ul>
+                        <ul class="actions">
+                            <!-- <li><a href="generic.html" class="button">Learn more</a></li> -->
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
         <section>
             <!-- <a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a> -->
-            <div class="content">
+            <div class="content container">
                 <div class="inner">
                     <h2>Solutions</h2>
-                    <ul>
-                        <li>Any with internet access to be our Partner as a Node Host and earn in their preferred currency</li>
-                        <li>each node operates independently to compartmentalize information through our network</li>
-                        <li>We are completely open-sourced, allowing anyone to inspect and provide feedback to improve our infrastructure, UX, and security</li>
-                        <li>Multiple independent nodes allows us to have competitive pricing without compromising quality</li>
-                    </ul>
-                    <ul class="actions">
-                        <!-- <li><a href="generic.html" class="button">Learn more</a></li> -->
-                    </ul>
+                    <div class="glassed-container" data-aos="fade-up" data-aos-duration="2000" >
+                        <ul>
+                            <li>Any with internet access to be our Partner as a Node Host and earn in their preferred currency</li>
+                            <li>each node operates independently to compartmentalize information through our network</li>
+                            <li>We are completely open-sourced, allowing anyone to inspect and provide feedback to improve our infrastructure, UX, and security</li>
+                            <li>Multiple independent nodes allows us to have competitive pricing without compromising quality</li>
+                        </ul>
+                        <ul class="actions">
+                            <!-- <li><a href="generic.html" class="button">Learn more</a></li> -->
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
@@ -89,10 +113,71 @@ import Logo from "@svg/logo.svg"
     </section> -->
 
 <!-- Two -->
-    <section id="team" class="wrapper style3 fade-up">
+    <section id="team" class="wrapper style1">
         <div class="inner">
-            <h2>Who are we?</h2>
-            <p>Our team are made up of product leaders, engineers, and developers Palantir, French Military, Akamai Technologies and Lucid Motors. We have a track-record of creating mission-critical decentralized security products for mission critical organizations and we have the partnerships and resources to help you build your own decentralized network.</p>
+            
+            <div class="container">
+                <h1>About us</h1>
+            </div>
+            <div class="gradient-container drop-shadow-md" data-aos="slide-up" data-aos-duration="1500">
+                <p>Our team are made up of product leaders, engineers, and developers Palantir, French Military, Akamai Technologies and Lucid Motors. We have a track-record of creating mission-critical decentralized security products for mission critical organizations and we have the partnerships and resources to help you build your own decentralized network.</p>               
+            </div>
+            <div class="container">
+                <ul class="flex flex-row flex-wrap">
+                    <li class="flex gap-x-6 py-2 px-8" data-aos="zoom-in-right" data-aos-duration="1000">
+                        <div class="flex min-w-0 gap-x-4">
+                          <img class="grayscale hover:grayscale-0 h-24 w-24 overflow-hidden rounded-full ring-2 ring-gray-700 dark:ring-gray-100" src={Ting} alt="avatar">
+                          <div class="min-w-0 flex-auto pt-2">
+                              <p class="text-xl font-semibold leading-6 text-gray-50 mb-1">Ting Lik To</p>
+                              <p class="text-sm leading-1 text-gray-550 mb-1">CEO</p>
+                            <p class="truncate text-lg leading-1 text-gray-500">
+                                <a href="https://www.linkedin.com/in/tinglik/" target="_blank" rel="noopener noreferrer">
+                                  <i class="mr-1 fab fa-lg fa-linkedin"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/tinglik/" target="_blank" rel="noopener noreferrer">
+                                    <i class="mr-1 fab fa-lg fa-github"></i>
+                                </a>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="flex gap-x-6 py-2 px-8" data-aos="zoom-in-right" data-aos-duration="1500">
+                        <div class="flex min-w-0 gap-x-4">
+                          <img class="grayscale hover:grayscale-0 h-24 w-24 overflow-hidden rounded-full ring-2 ring-gray-700 dark:ring-gray-100" src={Groot} alt="avatar">
+                          <div class="min-w-0 flex-auto pt-2">
+                            <p class="text-xl font-semibold text-gray-50 mb-1">Smolgroot</p>
+                            <p class="text-sm leading-1 text-gray-550 mb-1">CTO</p>
+                            <p class="truncate text-lg leading-1 text-gray-500">
+                                <a href="https://x.com/rootshe11" target="_blank" rel="noopener noreferrer">
+                                  <i class="mr-1 fab fa-lg fa-twitter"></i>
+                                </a>
+                                <a href="https://github.com/smolgroot" target="_blank" rel="noopener noreferrer">
+                                    <i class="mr-1 fab fa-lg fa-github"></i>
+                                </a>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="flex gap-x-6 py-2 px-8" data-aos="zoom-in-right" data-aos-duration="2000">
+                        <div class="flex min-w-0 gap-x-4">
+                          <img class="grayscale hover:grayscale-0 h-24 w-24 overflow-hidden rounded-full ring-2 ring-gray-700 dark:ring-gray-100" src={Luis} alt="avatar">
+                          <div class="min-w-0 flex-auto pt-2">
+                            <p class="text-xl font-semibold leading-6 text-gray-50 mb-1">Luis Saldarriaga</p>
+                            <p class="text-sm leading-1 text-gray-550 mb-1">Founding Engineer</p>
+                            <p class="truncate text-lg leading-1 text-gray-500">
+                                <a href="https://www.linkedin.com/in/luis-saldarriaga-0573a5a9/" target="_blank" rel="noopener noreferrer">
+                                  <i class="mr-1 fab fa-lg fa-linkedin"></i>
+                                </a>
+                                <a href="https://github.com/luissalda1995" target="_blank" rel="noopener noreferrer">
+                                    <i class="mr-1 fab fa-lg fa-github"></i>
+                                </a>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                        
+                  </ul>
+            </div> 
             <!-- <div class="features">
                 <section>
                     <span class="icon solid major fa-code"></span>
@@ -130,3 +215,9 @@ import Logo from "@svg/logo.svg"
             </ul>
         </div> -->
     </section>
+    <script>
+        import { aosInit } from "@js/aos";
+
+        // runs on initial page load
+        aosInit();
+    </script>

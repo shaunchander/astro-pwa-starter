@@ -9,9 +9,16 @@
     pointer-events: none;
 }
 
+.App-logo-header {
+    height: 3.5em;
+    /* float: left; */
+    margin: 0 1%;
+    pointer-events: none;
+}
+
 @media (prefers-reduced-motion: no-preference) {
     .App-logo {
-        animation: App-logo-spin infinite 15s linear;
+        animation: App-logo-spin infinite 5s linear;
     }
 }
 

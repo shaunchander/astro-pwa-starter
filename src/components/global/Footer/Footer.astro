@@ -1,36 +1,128 @@
 ---
 import "@style/App.css"
+import Logo from "@svg/skypier_baseline.svg"
 ---
 
 <!-- Wave -->
-<div class="ocean">
+<!-- <div class="ocean">
     <div class="wave"></div>
     <div class="wave"></div>
-</div>
+</div> -->
 
 <!-- Footer -->
-<footer id="footer" class="wrapper style1-alt">
-    <div class="inner">
-        <ul class="menu">
-            <div class="section-block">
-                <span>© 2024 Skypier IO</span>
-                    <span><a href="mailto:info@skypier.io">info@skypier.io</a></span>
-                    <span>|</span>
-                    <span><a href="/terms-of-service">Terms of Service</a><span>
-                    <span>|</span>
-                    <span><a class="privacy-policy-link" href="/privacy-policy/" rel="privacy-policy">Privacy Policy</a><span>
-            <div class="footer-social" style="display: inline-block; float: right; font-size: 1.5em;">
-                    <a href="https://twitter.com/SkypierIO" target="_blank">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="https://github.com/SkyPierIO" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/company/Skypier" target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </div>
-            </div>    
-        </ul>
+<footer id="footer" class="wrapper style5">
+    <div class="container mx-6 py-10 text-center md:text-left pt-5">
+        <div class="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <!-- Skypier elements section -->
+        <div class="mr-2">
+            <h4
+            class="mb-4 flex items-center justify-center font-semibold uppercase md:justify-start">
+                <img
+                    src={Logo}
+                    class="App-logo-header"
+                    alt="skypier logo"
+                    style="padding-left: 1rem;"
+                />	
+            </h4>
+            <p class="text-sm justify-center md:justify-start">
+                Skypier goal is to enforce freedom and privacy to web3 through our products offer.
+            </p>
+        </div>
+        <!-- Products section -->
+        <div class="">
+            <h4
+            class="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+            Products
+            </h4>
+            <p class="mb-4 flex items-center justify-center md:justify-start">
+                <a href="https://skypier.io/" class="text-neutral-600 dark:text-neutral-200 text-sm" target="_blank"
+                    >Skypier VPN</a
+                >
+            </p>
+            <p class="mb-4 flex items-center justify-center md:justify-start">
+                <a href="https://skypier.io/" class="text-neutral-600 dark:text-neutral-200 text-sm" target="_blank"
+                    >Skypier SOCKS5 Proxies</a
+                >
+            </p>
+            <p class="mb-4 flex items-center justify-center md:justify-start">
+                <a href="#!" class="text-neutral-600 dark:text-neutral-200 text-sm pointer-events-none opacity-50 cursor-not-allowed"
+                    >More to come...</a
+                >
+            </p>
+        </div>
+        <!-- Useful links section -->
+        <div class="">
+            <h4
+            class="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+            Useful links
+            </h4>
+            <p class="mb-4 flex items-center justify-center md:justify-start">
+                <a href="/terms-of-service" class="text-neutral-600 dark:text-neutral-200 text-sm">
+                    Terms of Service
+                </a>
+            </p>
+            <p class="mb-4 flex items-center justify-center md:justify-start">
+                <a href="/privacy-policy/" rel="privacy-policy" class="text-neutral-600 dark:text-neutral-200 text-sm">
+                    Privacy Policy
+                </a>
+            </p>
+            <p class="mb-4 flex items-center justify-center md:justify-start">
+            <a href="#!" class="text-neutral-600 dark:text-neutral-200 text-sm"
+                >Documentation</a
+            >
+            </p>
+        </div>
+        <!-- Contact section -->
+        <div>
+            <h4
+            class="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+            Contact
+            </h4>
+            <p class="mb-4 flex items-center justify-center md:justify-start text-sm">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="mr-3 h-5 w-5">
+                    <path
+                    d="M11.47 3.84a.75.75 0 011.06 0l8.69 8.69a.75.75 0 101.06-1.06l-8.689-8.69a2.25 2.25 0 00-3.182 0l-8.69 8.69a.75.75 0 001.061 1.06l8.69-8.69z" />
+                    <path
+                    d="M12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a2.29 2.29 0 00.091-.086L12 5.43z" />
+                </svg>
+                New York, NY 10012, US
+            </p>
+            <p class="mb-4 flex items-center justify-center md:justify-start text-sm">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="mr-3 h-5 w-5">
+                    <path
+                    d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
+                    <path
+                    d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
+                </svg>
+                <a href="mailto:info@skypier.io">info@skypier.io</a>
+            </p>
+            <div class="flex items-center justify-center md:justify-start">
+                <a class="mr-6 text-neutral-600 dark:text-neutral-200" href="https://twitter.com/SkypierIO" target="_blank">
+                    <i class="fab fa-lg fa-twitter"></i>
+                </a>
+                <a class="mr-6 text-neutral-600 dark:text-neutral-200" href="https://github.com/SkyPierIO" target="_blank">
+                    <i class="fab fa-lg fa-github"></i>
+                </a>
+                <a class="mr-6 text-neutral-600 dark:text-neutral-200" href="https://www.linkedin.com/company/Skypier" target="_blank">
+                    <i class="fab fa-lg fa-linkedin"></i>
+                </a>
+            </div>
+            </div>
+        </div>
     </div>
+
+  <!--Copyright section-->
+  <div class="p-6 text-center">
+    <div class="section-block">
+        <span>© 2024 Skypier Technologies</span>
+    </div>    
+  </div>
 </footer>

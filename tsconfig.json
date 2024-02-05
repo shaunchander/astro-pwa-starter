@@ -19,6 +19,9 @@
       "@style/*": [
         "src/styles/*"
       ],
+      "@js/*": [
+        "src/js/*"
+      ],
       "@util/*": [
         "utils/*"
       ],

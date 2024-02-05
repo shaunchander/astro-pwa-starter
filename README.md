@@ -479,7 +479,7 @@ import type { ManifestOptions } from "vite-plugin-pwa"
 export const seoConfig = {
 	baseURL: "https://example.com", // Change this to your production URL.
 	description:
-		"Astro PWA Starter is an opionated Astro starter for building robust static websites.", // Change this to be your website's description.
+		"Skupier is an opionated Astro starter for building robust static websites.", // Change this to be your website's description.
 	type: "website",
 	image: {
 		url: "https://picsum.photos/1200/630", // Change this to your website's thumbnail.
@@ -487,7 +487,7 @@ export const seoConfig = {
 		width: 1200,
 		height: 630
 	},
-	siteName: "Astro PWA Starter", // Change this to your website's name,
+	siteName: "Skupier", // Change this to your website's name,
 	twitter: {
 		card: "summary_large_image"
 	}
@@ -497,11 +497,11 @@ export const seoConfig = {
  * Defines the configuration for PWA webmanifest.
  */
 export const manifest: Partial<ManifestOptions> = {
-	name: "Astro PWA Starter",
-	short_name: "Astro PWA Starter",
+	name: "Skupier",
+	short_name: "Skupier",
 	description:
-		"Astro PWA Starter is an opionated Astro starter for building robust static websites.",
-	theme_color: "#30E130",
+		"Skupier is an opionated Astro starter for building robust static websites.",
+	theme_color: "#5df",
 	background_color: "#ffffff",
 	display: "minimal-ui",
 	icons: [
