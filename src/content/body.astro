@@ -47,12 +47,18 @@ import "aos/dist/aos.css"; // AOS styles
                
             </div>
             <div class="container">
-                <form action="action_page.php">
-                    <h2>Join the waitlist today:</h2>
-                    <div style="max-width:550px; display:flex;">
-                      <input type="text" placeholder="Email address" name="mail" required>
+                <!-- <form action="action_page.php"> -->
+                <form 
+                    method="POST" 
+                    action="https://script.google.com/macros/s/AKfycbxgowDv4E0Kqqkex4FjL78XK6DIpRE_6emhaOcs1zQJ_MGDC0mXIKmW_BwA4tH-oswK/exec"
+                    id="waitlist-form"
+                >
+                  <h2>Join the waitlist today:</h2>
+                  <div style="max-width:550px; display:flex;">
+                      <input name="Email" type="email" placeholder="Email address" required>
+                      <!-- <input name="Name" type="text" placeholder="Name" required> -->
                       <pre>    </pre>
-                      <input type="submit" value="Join!">
+                      <button type="submit">Join!</button>
                     </div>
                 </form>
             </div>
@@ -120,7 +126,7 @@ import "aos/dist/aos.css"; // AOS styles
                 <h1>About us</h1>
             </div>
             <div class="gradient-container drop-shadow-md" data-aos="slide-up" data-aos-duration="1500">
-                <p>Our team are made up of product leaders, engineers, and developers Palantir, French Military, Akamai Technologies and Lucid Motors. We have a track-record of creating mission-critical decentralized security products for mission critical organizations and we have the partnerships and resources to help you build your own decentralized network.</p>               
+                <p>Our team are made up of product leaders, engineers, and developers from Palantir, French Military, Akamai Technologies and Lucid Motors. We have a track-record of creating mission-critical decentralized security products for mission critical organizations and we have the partnerships and resources to help you build your own decentralized network.</p>               
             </div>
             <div class="container">
                 <ul class="flex flex-row flex-wrap">
